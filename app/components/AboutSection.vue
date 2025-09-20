@@ -125,7 +125,7 @@
 					<div
 						v-for="principle in principles"
 						:key="principle.title"
-						class="glass-card rounded-2xl p-6 text-left h-full"
+						class="glass-card rounded-2xl p-6 text-left h-full bg-gradient-to-br from-white/90 to-white/65 border border-slate-200/25 backdrop-blur-xl shadow-[0_18px_36px_-24px_rgba(30,64,175,0.5)] transition-all duration-350 hover:-translate-y-1 hover:shadow-[0_22px_48px_-24px_rgba(30,64,175,0.55)]"
 					>
 						<h4 class="text-lg font-semibold text-gray-900 mb-3">
 							{{ principle.title }}

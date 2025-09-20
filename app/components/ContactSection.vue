@@ -13,7 +13,9 @@
 			isVisible ? 'is-visible' : 'is-hidden',
 		]"
 	>
-		<div class="contact-blur"></div>
+		<div
+			class="contact-blur absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(59,130,246,0.18),transparent_60%),radial-gradient(circle_at_bottom_right,rgba(236,72,153,0.18),transparent_65%)] opacity-65 blur-[120px] pointer-events-none"
+		></div>
 		<div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 			<div class="text-center mb-16">
 				<h2 class="text-4xl font-bold mb-4">Get In Touch</h2>
@@ -93,7 +95,7 @@
 						</div>
 						<button
 							type="submit"
-							class="w-full bg-blue-600 text-white py-3 rounded-lg btn-glow"
+							class="w-full bg-blue-600 text-white py-3 rounded-lg btn-glow relative overflow-hidden transition-all duration-300 hover:-translate-y-0.5 hover:scale-[1.01] hover:shadow-[0_20px_40px_-25px_rgba(59,130,246,0.8)]"
 						>
 							Send Message
 						</button>
@@ -102,4 +104,18 @@
 			</div>
 		</div>
 	</section>
+	<footer
+		ref="footerRef"
+		:class="[
+			'bg-gray-900 text-white py-8 section-reveal border-t border-white/10',
+			isVisible ? 'is-visible' : 'is-hidden',
+		]"
+	>
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+			<p class="text-sm text-gray-300">
+				&copy; {{ new Date().getFullYear() }} Ethan Morin. Crafted with
+				curiosity and care.
+			</p>
+		</div>
+	</footer>
 </template>

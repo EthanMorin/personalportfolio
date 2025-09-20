@@ -39,7 +39,9 @@
 			</div>
 
 			<div class="mt-16 max-w-4xl mx-auto">
-				<div class="glass-card rounded-3xl p-8 sm:p-10 text-center">
+				<div
+					class="glass-card rounded-3xl p-8 sm:p-10 text-center bg-gradient-to-br from-white/90 to-white/65 border border-slate-200/25 backdrop-blur-xl shadow-[0_18px_36px_-24px_rgba(30,64,175,0.5)] transition-all duration-350 hover:-translate-y-1 hover:shadow-[0_22px_48px_-24px_rgba(30,64,175,0.55)]"
+				>
 					<h3 class="text-2xl font-bold text-gray-900 mb-3">
 						Need something built differently?
 					</h3>
@@ -50,7 +52,7 @@
 					</p>
 					<button
 						type="button"
-						class="inline-flex items-center justify-center bg-blue-600 text-white px-6 py-3 rounded-xl btn-glow"
+						class="inline-flex items-center justify-center bg-blue-600 text-white px-6 py-3 rounded-xl btn-glow relative overflow-hidden transition-all duration-300 hover:-translate-y-0.5 hover:scale-[1.01] hover:shadow-[0_20px_40px_-25px_rgba(59,130,246,0.8)]"
 						@click="scrollToSection('contact')"
 					>
 						Let's craft your next launch

@@ -19,7 +19,9 @@
 	<div
 		ref="cardRef"
 		:class="[
-			'group relative rounded-2xl overflow-hidden border border-gray-100 bg-white/80 shadow-md transition-all duration-500 section-reveal card-tilt',
+			'group relative rounded-2xl overflow-hidden border border-gray-100 bg-white/80 shadow-md section-reveal card-tilt',
+			'transition-[transform,box-shadow] duration-[450ms] ease-[cubic-bezier(0.22,1,0.36,1)]',
+			'hover:-translate-y-1.5 hover:rotate-[4deg] hover:shadow-[0_30px_60px_-45px_rgba(15,23,42,0.55)]',
 			isVisible ? 'is-visible' : 'is-hidden',
 		]"
 	>

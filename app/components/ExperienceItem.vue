@@ -23,7 +23,10 @@
 			isVisible ? 'is-visible' : 'is-hidden',
 		]"
 	>
-		<span class="timeline-indicator" aria-hidden="true"></span>
+		<span
+			class="timeline-indicator absolute -left-[0.95rem] top-[0.6rem] w-5 h-5 rounded-full bg-gradient-to-br from-blue-500 to-purple-500 shadow-[0_0_0_6px_rgba(59,130,246,0.15),0_0_25px_rgba(124,58,237,0.45)] animate-pulse-timeline"
+			aria-hidden="true"
+		></span>
 		<div
 			class="bg-gray-50 rounded-2xl p-6 shadow-sm border border-gray-100 transition-transform duration-500 hover:-translate-y-1"
 		>

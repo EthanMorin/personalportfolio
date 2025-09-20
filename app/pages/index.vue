@@ -6,6 +6,5 @@
 		<ProjectsSection />
 		<ExperienceSection />
 		<ContactSection />
-		<PortfolioFooter />
 	</div>
 </template>
