@@ -32,9 +32,10 @@
 
 			<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 				<ProjectCard
-					v-for="project in projects"
+					v-for="(project, index) in projects"
 					:key="project.title"
 					:project="project"
+					:index="index"
 				/>
 			</div>
 

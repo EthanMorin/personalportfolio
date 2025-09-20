@@ -106,26 +106,31 @@
 		rgba(236, 72, 153, 0.35)
 	);
 	opacity: 0;
-	transition: opacity 0.45s ease;
+	transform: scale(0.95);
+	transform-origin: center;
+	transition: opacity 0.8s cubic-bezier(0.23, 1, 0.32, 1),
+		transform 0.8s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .card-tilt:hover::after {
 	opacity: 1;
+	transform: scale(1);
 }
 
 /* Section reveal animations */
 .section-reveal {
-	transition: opacity 0.7s ease, transform 0.7s ease;
+	transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+		transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .section-reveal.is-hidden {
 	opacity: 0;
-	transform: translateY(24px);
+	transform: translateY(32px) scale(0.95);
 }
 
 .section-reveal.is-visible {
 	opacity: 1;
-	transform: translateY(0);
+	transform: translateY(0) scale(1);
 }
 
 /* Custom animation classes */
