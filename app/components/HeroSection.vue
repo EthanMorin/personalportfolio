@@ -3,14 +3,16 @@
 	const profileImage = '/images/profile.jpeg';
 
 	const heroBadges = [
-		'Human-centered engineering',
-		'Cloud-native architecture',
-		'Design systems craftsmanship',
+		'Full Stack Developer',
+		'Software Engineer',
+		'Cloud Engineer',
+		'Graphic Designer',
 	];
 
 	const heroHighlights = [
-		{ value: '1+', label: 'Years of hands-on experience' },
-		{ value: '∞', label: 'Curiosity, learning, iterating' },
+		{ value: '1.5+', label: 'Years of hands-on experience' },
+		{ value: '4', label: 'Unique Internships' },
+		{ value: '12+', label: 'Fluent Programming Languages' },
 	];
 
 	const { element: sectionRef, isVisible } = useRevealObserver({
@@ -74,11 +76,13 @@
 			class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex-1 flex flex-col justify-center z-20 pt-20"
 		>
 			<div class="text-center">
-				<div class="flex flex-wrap justify-center gap-3 mb-8">
+				<div
+					class="grid grid-cols-2 sm:flex sm:flex-wrap justify-center gap-2 sm:gap-3 mb-8 place-items-center"
+				>
 					<span
 						v-for="badge in heroBadges"
 						:key="badge"
-						class="px-4 py-1 rounded-full bg-white/70 border border-white/40 text-sm font-medium text-gray-700 shadow-sm backdrop-blur"
+						class="px-3 py-1 sm:px-4 rounded-full bg-white/70 border border-white/40 text-xs sm:text-sm font-medium text-gray-700 shadow-sm backdrop-blur text-center w-full h-8 sm:w-auto sm:h-auto flex items-center justify-center"
 					>
 						{{ badge }}
 					</span>
@@ -104,10 +108,11 @@
 					<p
 						class="text-base sm:text-lg text-gray-700 max-w-3xl mx-auto mb-6 sm:mb-8 px-4 leading-relaxed"
 					>
-						I build resilient web platforms with an eye for detail,
-						accessibility, and measurable impact. From shaping product strategy
-						to scaling cloud-native systems, I help teams ship work that stands
-						out.
+						Experienced in building and designing software solutions from the
+						ground up, I use a variety of technologies to meet the unique needs
+						of clients and teams. My work combines industry best practices with
+						Agile methodologies, ensuring efficient delivery and results that
+						make a difference.
 					</p>
 					<div
 						class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4"
