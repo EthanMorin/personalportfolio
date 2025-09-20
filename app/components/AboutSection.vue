@@ -38,9 +38,12 @@
 					About Me
 				</h2>
 				<p class="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-4">
-					I'm a passionate full-stack engineer with 5+ years of experience
-					building modern web applications. I love solving complex problems and
-					creating solutions that make a real impact.
+					I’m a results-driven Full Stack Developer with expertise in Vue,
+					Laravel, and Shopify. I have worked closely with stakeholders through
+					my internships to deliver tailored, industry-compliant solutions that
+					meet their specific needs. I’m passionate about building reliable,
+					accessible software, as well as authentication, database management,
+					and responsive modern design.
 				</p>
 			</div>
 
@@ -144,9 +147,26 @@
 								>•</span
 							>
 							<span class="text-sm sm:text-base"
-								>Mentor junior developers and share knowledge</span
+								>Build and manage databases with a focus on security, and scalability</span
 							>
 						</li>
+						<li class="flex items-start">
+							<span class="text-blue-500 mr-2 sm:mr-3 text-sm sm:text-base"
+								>•</span
+							>
+							<span class="text-sm sm:text-base"
+								>Write reliable, maintainable code by applying TDD practices</span
+							>
+						</li>
+						<li class="flex items-start">
+							<span class="text-blue-500 mr-2 sm:mr-3 text-sm sm:text-base"
+								>•</span
+							>
+							<span class="text-sm sm:text-base"
+								>Design clean, intuitive interfaces that enhance user experience</span
+							>
+						</li>
+
 					</ul>
 				</div>
 			</div>
