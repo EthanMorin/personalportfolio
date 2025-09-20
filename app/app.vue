@@ -5,5 +5,5 @@
 </template>
 
 <style>
-	@import "tailwindcss";
+	@import 'tailwindcss';
 </style>

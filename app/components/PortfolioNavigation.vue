@@ -1,5 +1,5 @@
 <script setup lang="ts">
-	const sections = ["home", "about", "projects", "experience", "contact"];
+	const sections = ['home', 'about', 'projects', 'experience', 'contact'];
 	const { scrollToSection, currentSection, observeSections, stopObserving } =
 		useNavigation();
 	const scrollProgress = ref(0);
@@ -23,7 +23,7 @@
 
 		observeSections(sections);
 		updateProgress();
-		window.addEventListener("scroll", updateProgress, { passive: true });
+		window.addEventListener('scroll', updateProgress, { passive: true });
 	});
 
 	onBeforeUnmount(() => {
@@ -31,7 +31,7 @@
 			return;
 		}
 
-		window.removeEventListener("scroll", updateProgress);
+		window.removeEventListener('scroll', updateProgress);
 		stopObserving();
 	});
 </script>

@@ -6,19 +6,19 @@
 
 	const principles = [
 		{
-			title: "Empathy first",
+			title: 'Empathy first',
 			description:
-				"Products succeed when they champion the people who use them. I design flows around real stories and goals.",
+				'Products succeed when they champion the people who use them. I design flows around real stories and goals.',
 		},
 		{
-			title: "Ship with intention",
+			title: 'Ship with intention',
 			description:
-				"Every iteration should deliver measurable value. I partner closely with stakeholders to focus on outcomes, not just output.",
+				'Every iteration should deliver measurable value. I partner closely with stakeholders to focus on outcomes, not just output.',
 		},
 		{
-			title: "Craft for longevity",
+			title: 'Craft for longevity',
 			description:
-				"Clean architecture, accessible UI, and thoughtful documentation keep teams moving quickly long after launch.",
+				'Clean architecture, accessible UI, and thoughtful documentation keep teams moving quickly long after launch.',
 		},
 	];
 </script>

@@ -1,17 +1,17 @@
 <script setup lang="ts">
 	const { scrollToSection } = useNavigation();
-	const profileImage = "/images/profile.jpeg";
+	const profileImage = '/images/profile.jpeg';
 
 	const heroBadges = [
-		"Human-centered engineering",
-		"Cloud-native architecture",
-		"Design systems craftsmanship",
+		'Human-centered engineering',
+		'Cloud-native architecture',
+		'Design systems craftsmanship',
 	];
 
 	const heroHighlights = [
-		{ value: "5+", label: "Years of hands-on experience" },
-		{ value: "20+", label: "Products & features shipped" },
-		{ value: "∞", label: "Curiosity, learning, iterating" },
+		{ value: '5+', label: 'Years of hands-on experience' },
+		{ value: '20+', label: 'Products & features shipped' },
+		{ value: '∞', label: 'Curiosity, learning, iterating' },
 	];
 
 	const { element: sectionRef, isVisible } = useRevealObserver({
