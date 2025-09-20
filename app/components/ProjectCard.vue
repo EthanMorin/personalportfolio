@@ -38,39 +38,39 @@
 			<img
 				:src="props.project.image"
 				:alt="props.project.title"
-				class="w-full h-48 object-cover transition-all duration-700 ease-[cubic-bezier(0.25,0.46,0.45,0.94)] group-hover:scale-110 group-hover:brightness-110"
+				class="w-full h-40 sm:h-48 object-cover transition-all duration-700 ease-[cubic-bezier(0.25,0.46,0.45,0.94)] group-hover:scale-110 group-hover:brightness-110"
 			/>
 			<div
-				class="absolute top-4 right-4 px-3 py-1 rounded-full bg-white/90 text-xs font-semibold text-gray-700 shadow-lg transition-all duration-300 group-hover:scale-105 group-hover:shadow-xl"
+				class="absolute top-3 right-3 sm:top-4 sm:right-4 px-2 sm:px-3 py-1 rounded-full bg-white/90 text-xs font-semibold text-gray-700 shadow-lg transition-all duration-300 group-hover:scale-105 group-hover:shadow-xl"
 			>
 				Case Study
 			</div>
 		</div>
-		<div class="relative p-6">
+		<div class="relative p-4 sm:p-6">
 			<h3
-				class="text-xl font-bold text-gray-900 mb-2 transition-all duration-300 group-hover:text-blue-600"
+				class="text-lg sm:text-xl font-bold text-gray-900 mb-2 transition-all duration-300 group-hover:text-blue-600"
 			>
 				{{ props.project.title }}
 			</h3>
 			<p
-				class="text-gray-600 mb-4 leading-relaxed transition-all duration-300 group-hover:text-gray-700"
+				class="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4 leading-relaxed transition-all duration-300 group-hover:text-gray-700"
 			>
 				{{ props.project.description }}
 			</p>
-			<div class="flex flex-wrap gap-2 mb-4">
+			<div class="flex flex-wrap gap-1.5 sm:gap-2 mb-3 sm:mb-4">
 				<span
 					v-for="(tech, techIndex) in props.project.technologies"
 					:key="tech"
-					class="px-3 py-1 rounded-full bg-slate-100 text-slate-700 text-xs font-medium transition-all duration-300 hover:bg-blue-100 hover:text-blue-800 hover:scale-105"
+					class="px-2 sm:px-3 py-1 rounded-full bg-slate-100 text-slate-700 text-xs font-medium transition-all duration-300 hover:bg-blue-100 hover:text-blue-800 hover:scale-105"
 					:style="{ transitionDelay: `${techIndex * 50}ms` }"
 				>
 					{{ tech }}
 				</span>
 			</div>
-			<div class="flex gap-4 text-sm font-medium">
+			<div class="flex gap-3 sm:gap-4 text-xs sm:text-sm font-medium">
 				<a
 					:href="props.project.github"
-					class="inline-flex items-center gap-1 text-blue-600 hover:text-blue-800 transition-all duration-300 hover:scale-105 hover:-translate-y-0.5"
+					class="inline-flex items-center gap-1 text-blue-600 hover:text-blue-800 transition-all duration-300 hover:scale-105 hover:-translate-y-0.5 min-h-[44px]"
 				>
 					<span>GitHub</span>
 					<span
@@ -81,7 +81,7 @@
 				</a>
 				<a
 					:href="props.project.live"
-					class="inline-flex items-center gap-1 text-green-600 hover:text-green-700 transition-all duration-300 hover:scale-105 hover:-translate-y-0.5"
+					class="inline-flex items-center gap-1 text-green-600 hover:text-green-700 transition-all duration-300 hover:scale-105 hover:-translate-y-0.5 min-h-[44px]"
 				>
 					<span>Live Demo</span>
 					<span

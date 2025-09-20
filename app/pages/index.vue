@@ -1,10 +1,13 @@
 <template>
-	<div>
+	<div class="min-h-screen flex flex-col">
 		<PortfolioNavigation />
-		<HeroSection />
-		<AboutSection />
-		<ProjectsSection />
-		<ExperienceSection />
-		<ContactSection />
+		<main class="flex-1">
+			<HeroSection />
+			<AboutSection />
+			<ProjectsSection />
+			<ExperienceSection />
+			<ContactSection />
+		</main>
+		<FooterSection />
 	</div>
 </template>

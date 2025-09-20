@@ -141,3 +141,104 @@
 .animate-pulse-timeline {
 	animation: pulse-timeline 2.6s ease-in-out infinite;
 }
+
+/* Mobile-specific improvements */
+@media (max-width: 640px) {
+	/* Reduce animation intensity on mobile for better performance */
+	.animate-float {
+		animation-duration: 24s;
+	}
+
+	/* Improve touch targets */
+	button,
+	a {
+		min-height: 44px;
+		min-width: 44px;
+	}
+
+	/* Better spacing for mobile */
+	.section-reveal {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+
+	/* Optimize glass card effects for mobile */
+	.glass-card {
+		backdrop-filter: blur(8px);
+		-webkit-backdrop-filter: blur(8px);
+	}
+
+	/* Improve text readability on small screens */
+	body {
+		-webkit-text-size-adjust: 100%;
+		text-size-adjust: 100%;
+	}
+
+	/* Better focus states for mobile */
+	button:focus-visible,
+	a:focus-visible,
+	input:focus-visible,
+	textarea:focus-visible {
+		outline: 2px solid #3b82f6;
+		outline-offset: 2px;
+	}
+
+	/* Mobile orb optimizations */
+	.hero-orb {
+		/* Reduce animation intensity on very small screens */
+		animation-duration: 30s;
+		/* Ensure orbs are circular and responsive */
+		aspect-ratio: 1;
+		/* Make orbs more visible behind navigation */
+		opacity: 0.6;
+	}
+
+	/* Better mobile grid spacing */
+	.grid {
+		padding: 0.5rem;
+	}
+
+	/* Ensure orbs don't overflow on very small screens */
+	.hero-orb--blue,
+	.hero-orb--purple,
+	.hero-orb--pink {
+		max-width: 100%;
+		max-height: 100%;
+	}
+
+	/* Make orbs more visible behind semi-transparent navigation */
+	.hero-orb--blue {
+		opacity: 0.5;
+	}
+
+	.hero-orb--purple {
+		opacity: 0.5;
+	}
+
+	.hero-orb--pink {
+		opacity: 0.5;
+	}
+}
+
+/* Prevent horizontal scroll on mobile */
+@media (max-width: 640px) {
+	html,
+	body {
+		overflow-x: hidden;
+	}
+
+	/* Ensure all containers respect viewport width */
+	* {
+		max-width: 100%;
+	}
+}
+
+/* Footer positioning */
+footer {
+	margin-top: auto;
+}
+
+/* Ensure proper layout structure */
+.min-h-screen {
+	min-height: 100vh;
+}
