@@ -129,11 +129,13 @@
 					</div>
 				</div>
 
-				<div class="mt-14 grid gap-6 sm:grid-cols-3 max-w-4xl mx-auto">
+				<div
+					class="mt-14 flex flex-wrap justify-center gap-6 max-w-4xl mx-auto"
+				>
 					<div
 						v-for="highlight in heroHighlights"
 						:key="highlight.label"
-						class="glass-card rounded-2xl px-6 py-5 text-left bg-gradient-to-br from-white/90 to-white/65 border border-slate-200/25 backdrop-blur-xl shadow-[0_18px_36px_-24px_rgba(30,64,175,0.5)] transition-all duration-350 hover:-translate-y-1 hover:shadow-[0_22px_48px_-24px_rgba(30,64,175,0.55)]"
+						class="glass-card rounded-2xl px-6 py-5 text-left bg-gradient-to-br from-white/90 to-white/65 border border-slate-200/25 backdrop-blur-xl shadow-[0_18px_36px_-24px_rgba(30,64,175,0.5)] transition-all duration-350 hover:-translate-y-1 hover:shadow-[0_22px_48px_-24px_rgba(30,64,175,0.55)] w-full sm:w-64 flex-shrink-0"
 					>
 						<p class="text-3xl font-extrabold text-gray-900 mb-1">
 							{{ highlight.value }}
