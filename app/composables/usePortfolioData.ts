@@ -75,28 +75,28 @@ export const usePortfolioData = () => {
       company: "Kairos Water",
       period: "Jul 2025 - Sep 2025",
       description:
-        "Delivered an IoT monitoring dashboard that translates sensor data into actionable alerts for field teams, reducing manual checks by 40%. Built resilient data pipelines and polished UI components in Vue.",
+        "Collaborated closely with a team of 4 and the other teams at Kairos to create a internal application to assist them with managing their current products in service, and view/create engineering change orders for any fixes that might be needed. Utilized React, and Node.js for the frontend and backend.",
     },
     {
       title: "Software Engineer (Internship)",
       company: "Organized Chaos Design",
       period: "Jan 2025 - Jul 2025",
       description:
-        "Partnered with designers to ship immersive marketing sites and headless CMS integrations. Introduced automated accessibility testing and performance budgets that improved Lighthouse scores by 18%.",
+        "Worked on a small team to build a website creation platform utilizing AI to assist with the creation of the website for users allowing them to create a first iteration of their website without much code experience in a fast time frame. Utilizing Nuxt and Laravel for the frontend and backend respectively and a combination of multiple AI APIs to assist users with the creation of their websites.",
     },
     {
       title: "Full Stack Engineer (Internship)",
       company: "Red Rock Real Estate LLC",
       period: "Sep 2024 - Jan 2025",
       description:
-        "Led the rebuild of a property insights platform using Nuxt and FastAPI, implementing CI/CD workflows and end-to-end testing suites that accelerated release cadence.",
+        "Developed and planned out a full stack application using Nuxt, and Supabase, to create a multi-listing service for both agents and buyers. Allowing them to see all new listings in the washington, Saint George area. Offering easy communication between the two parties.",
     },
     {
       title: "Frontend Developer (Internship)",
       company: "SunDree Medical Spa",
       period: "Mar 2022 - Feb 2023",
       description:
-        "Designed and developed a responsive appointment portal with bespoke theming, reusable component systems, and integrated analytics to inform marketing efforts.",
+        "Rebuilt the frontend of the website from the ground up using WordPress and maintained it for the client, adding new features and fixing bugs.",
     },
   ];
 
