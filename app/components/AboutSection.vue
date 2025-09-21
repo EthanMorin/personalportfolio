@@ -6,9 +6,9 @@
 
 	const principles = [
 		{
-			title: 'Empathy first',
+			title: 'Client driven',
 			description:
-				'Products succeed when they champion the people who use them. I design flows around real stories and goals.',
+				'Products are successful when they are client-centric. I design flows around real user stories and goals.', 
 		},
 		{
 			title: 'Ship with intention',
