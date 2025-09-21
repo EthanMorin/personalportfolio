@@ -14,6 +14,11 @@
 	}>();
 
 	const { element: cardRef, isVisible } = useRevealObserver({ threshold: 0.1 });
+
+	// Helper functions to check if links are valid
+	const hasValidGithub = (url: string) =>
+		url && url !== '#' && url.trim() !== '';
+	const hasValidLive = (url: string) => url && url !== '#' && url.trim() !== '';
 </script>
 
 <template>
@@ -40,11 +45,6 @@
 				:alt="props.project.title"
 				class="w-full h-40 sm:h-48 object-cover transition-all duration-700 ease-[cubic-bezier(0.25,0.46,0.45,0.94)] group-hover:scale-110 group-hover:brightness-110"
 			/>
-			<div
-				class="absolute top-3 right-3 sm:top-4 sm:right-4 px-2 sm:px-3 py-1 rounded-full bg-white/90 text-xs font-semibold text-gray-700 shadow-lg transition-all duration-300 group-hover:scale-105 group-hover:shadow-xl"
-			>
-				Case Study
-			</div>
 		</div>
 		<div class="relative p-4 sm:p-6">
 			<h3
@@ -67,8 +67,16 @@
 					{{ tech }}
 				</span>
 			</div>
-			<div class="flex gap-3 sm:gap-4 text-xs sm:text-sm font-medium">
+			<!-- Only show links section if at least one valid link exists -->
+			<div
+				v-if="
+					hasValidGithub(props.project.github) ||
+					hasValidLive(props.project.live)
+				"
+				class="flex gap-3 sm:gap-4 text-xs sm:text-sm font-medium"
+			>
 				<a
+					v-if="hasValidGithub(props.project.github)"
 					:href="props.project.github"
 					class="inline-flex items-center gap-1 text-blue-600 hover:text-blue-800 transition-all duration-300 hover:scale-105 hover:-translate-y-0.5 min-h-[44px]"
 				>
@@ -80,6 +88,7 @@
 					>
 				</a>
 				<a
+					v-if="hasValidLive(props.project.live)"
 					:href="props.project.live"
 					class="inline-flex items-center gap-1 text-green-600 hover:text-green-700 transition-all duration-300 hover:scale-105 hover:-translate-y-0.5 min-h-[44px]"
 				>

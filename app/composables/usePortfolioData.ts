@@ -51,21 +51,21 @@ export const usePortfolioData = () => {
       title: "E-Commerce Platform",
       description:
         "Full-stack commerce solution with a modular Vue.js frontend, event-driven Node.js services, and PostgreSQL. Implemented composable UI architecture, analytics dashboards, and real-time inventory syncing.",
-      technologies: ["Vue.js", "Node.js", "PostgreSQL", "Stripe API"],
+      technologies: ["React", "TypeScript", "Zustand"],
       image:
         "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=300&fit=crop",
-      github: "#",
-      live: "#",
+      github: "https://github.com/EthanMorin/Atlas-Todo",
+      live: "https://atlas-todo.ethanmorin.dev/",
     },
     {
-      title: "Task Management App",
+      title: "Atlas Flow – Trello-inspired Task Board",
       description:
-        "Real-time collaborative task platform featuring kanban boards, granular permissions, and optimistic UI updates powered by WebSockets.",
-      technologies: ["React", "Socket.io", "MongoDB", "Express.js"],
+        "Modern kanban board with React 18, TypeScript, and Zustand state management. Features drag-and-drop card management, inline editing, multiple color themes, and glassmorphism UI design. Built with Vite for fast development and includes dark/light mode support with accessible components.",
+      technologies: ["React", "TypeScript", "Zustand"],
       image:
-        "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=500&h=300&fit=crop",
-      github: "#",
-      live: "#",
+        "https://cdn.discordapp.com/attachments/1419238894381039648/1419238912525598720/image.png?ex=68d108bc&is=68cfb73c&hm=f8860f6c6a805dc60751825bd9bdd2c6b50b2d1bb81dd92fa63a275b7eaba176&",
+      github: "https://github.com/EthanMorin/Atlas-Todo",
+      live: "https://atlas-todo.ethanmorin.dev/",
     },
     {
       title: "API Analytics Dashboard",
