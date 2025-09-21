@@ -54,8 +54,8 @@ export const usePortfolioData = () => {
       technologies: ["React", "Tailwind CSS", "TypeScript"],
       image:
         "https://cdn.discordapp.com/attachments/1419238894381039648/1419254459279609948/image.png?ex=68d11737&is=68cfc5b7&hm=7888f8ef9ee71f85e34b7a1ac030d561d633c48531a2122e11c6cb62d7e8e38c&",
-      github: "https://github.com/EthanMorin/Atlas-Todo",
-      live: "https://atlas-todo.ethanmorin.dev/",
+      github: "https://github.com/EthanMorin/shopease",
+      live: "https://shopease.ethanmorin.dev/",
     },
     {
       title: "Atlas Flow – Trello-inspired Task Board",

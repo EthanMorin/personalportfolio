@@ -70,6 +70,8 @@
 		>
 			<a
 				:href="props.project.github"
+				target="_blank"
+				rel="noopener noreferrer"
 				class="inline-flex items-center gap-1 text-blue-600 hover:text-blue-800 transition-all duration-300 hover:scale-105 hover:-translate-y-0.5 min-h-[44px]"
 			>
 				<span>GitHub</span>
@@ -81,6 +83,8 @@
 			</a>
 			<a
 				:href="props.project.live"
+				target="_blank"
+				rel="noopener noreferrer"
 				class="inline-flex items-center gap-1 text-green-600 hover:text-green-700 transition-all duration-300 hover:scale-105 hover:-translate-y-0.5 min-h-[44px]"
 			>
 				<span>Live Demo</span>
