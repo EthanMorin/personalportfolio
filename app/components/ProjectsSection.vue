@@ -4,6 +4,19 @@
 	const { element: sectionRef, isVisible } = useRevealObserver({
 		threshold: 0.2,
 	});
+
+	// Dynamic grid classes based on project count
+	const getGridClasses = () => {
+		const projectCount = projects.length;
+
+		if (projectCount === 1) {
+			return 'grid grid-cols-1 max-w-2xl mx-auto gap-6 sm:gap-8';
+		} else if (projectCount === 2) {
+			return 'grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8';
+		} else {
+			return 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8';
+		}
+	};
 </script>
 
 <template>
@@ -32,7 +45,7 @@
 				</p>
 			</div>
 
-			<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+			<div :class="getGridClasses()">
 				<ProjectCard
 					v-for="(project, index) in projects"
 					:key="project.title"

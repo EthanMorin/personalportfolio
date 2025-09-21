@@ -14,11 +14,6 @@
 	}>();
 
 	const { element: cardRef, isVisible } = useRevealObserver({ threshold: 0.1 });
-
-	// Helper functions to check if links are valid
-	const hasValidGithub = (url: string) =>
-		url && url !== '#' && url.trim() !== '';
-	const hasValidLive = (url: string) => url && url !== '#' && url.trim() !== '';
 </script>
 
 <template>
@@ -38,7 +33,7 @@
 	>
 		<div
 			class="absolute inset-0 bg-gradient-to-br from-blue-500/0 via-purple-500/0 to-pink-500/0 transition-opacity duration-500 group-hover:via-purple-500/10 group-hover:to-pink-500/15"
-		></div>
+		/>
 		<div class="relative overflow-hidden">
 			<img
 				:src="props.project.image"
@@ -46,7 +41,7 @@
 				class="w-full h-40 sm:h-48 object-cover transition-all duration-700 ease-[cubic-bezier(0.25,0.46,0.45,0.94)] group-hover:scale-110 group-hover:brightness-110"
 			/>
 		</div>
-		<div class="relative p-4 sm:p-6">
+		<div class="relative p-4 sm:p-6 pb-16 sm:pb-20">
 			<h3
 				class="text-lg sm:text-xl font-bold text-gray-900 mb-2 transition-all duration-300 group-hover:text-blue-600"
 			>
@@ -67,39 +62,34 @@
 					{{ tech }}
 				</span>
 			</div>
-			<!-- Only show links section if at least one valid link exists -->
-			<div
-				v-if="
-					hasValidGithub(props.project.github) ||
-					hasValidLive(props.project.live)
-				"
-				class="flex gap-3 sm:gap-4 text-xs sm:text-sm font-medium"
+		</div>
+
+		<!-- Links positioned at bottom left -->
+		<div
+			class="absolute bottom-0 left-0 right-0 flex gap-3 sm:gap-4 text-xs sm:text-sm font-medium bg-white/95 backdrop-blur-sm p-3 sm:p-4"
+		>
+			<a
+				:href="props.project.github"
+				class="inline-flex items-center gap-1 text-blue-600 hover:text-blue-800 transition-all duration-300 hover:scale-105 hover:-translate-y-0.5 min-h-[44px]"
 			>
-				<a
-					v-if="hasValidGithub(props.project.github)"
-					:href="props.project.github"
-					class="inline-flex items-center gap-1 text-blue-600 hover:text-blue-800 transition-all duration-300 hover:scale-105 hover:-translate-y-0.5 min-h-[44px]"
+				<span>GitHub</span>
+				<span
+					aria-hidden="true"
+					class="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+					>↗</span
 				>
-					<span>GitHub</span>
-					<span
-						aria-hidden="true"
-						class="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-						>↗</span
-					>
-				</a>
-				<a
-					v-if="hasValidLive(props.project.live)"
-					:href="props.project.live"
-					class="inline-flex items-center gap-1 text-green-600 hover:text-green-700 transition-all duration-300 hover:scale-105 hover:-translate-y-0.5 min-h-[44px]"
+			</a>
+			<a
+				:href="props.project.live"
+				class="inline-flex items-center gap-1 text-green-600 hover:text-green-700 transition-all duration-300 hover:scale-105 hover:-translate-y-0.5 min-h-[44px]"
+			>
+				<span>Live Demo</span>
+				<span
+					aria-hidden="true"
+					class="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+					>↗</span
 				>
-					<span>Live Demo</span>
-					<span
-						aria-hidden="true"
-						class="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-						>↗</span
-					>
-				</a>
-			</div>
+			</a>
 		</div>
 	</div>
 </template>
