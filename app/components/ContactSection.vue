@@ -9,7 +9,7 @@
 		id="contact"
 		ref="sectionRef"
 		:class="[
-			'relative overflow-hidden py-16 bg-gray-900 text-white section-reveal',
+			'relative overflow-hidden py-16 bg-slate-950 text-white section-reveal',
 			isVisible ? 'is-visible' : 'is-hidden',
 		]"
 	>

@@ -1,9 +1,9 @@
 <script setup lang="ts">
 	interface Project {
+		image: string;
 		title: string;
 		description: string;
 		technologies: string[];
-		image: string;
 		github: string;
 		live: string;
 	}
@@ -20,9 +20,9 @@
 	<div
 		ref="cardRef"
 		:class="[
-			'group relative rounded-2xl overflow-hidden border border-gray-100 bg-white/80 shadow-md section-reveal card-tilt',
+			'group relative rounded-2xl overflow-hidden border border-slate-700/80 bg-slate-900/90 shadow-md section-reveal card-tilt',
 			'transition-all duration-700 ease-[cubic-bezier(0.23,1,0.32,1)]',
-			'hover:-translate-y-2 hover:rotate-[1.5deg] hover:shadow-[0_25px_50px_-12px_rgba(0,0,0,0.25)]',
+			// 'hover:-translate-y-2 hover:rotate-[1.5deg] hover:shadow-[0_25px_50px_-12px_rgba(0,0,0,0.5)]',
 			'hover:scale-[1.02]',
 			'origin-center',
 			isVisible ? 'is-visible' : 'is-hidden',
@@ -38,17 +38,17 @@
 			<img
 				:src="props.project.image"
 				:alt="props.project.title"
-				class="w-full h-40 sm:h-48 object-cover transition-all duration-700 ease-[cubic-bezier(0.25,0.46,0.45,0.94)] group-hover:scale-110 group-hover:brightness-110"
+				class="w-full h-40 sm:h-48 object-cover"
 			/>
 		</div>
 		<div class="relative p-4 sm:p-6 pb-16 sm:pb-20">
 			<h3
-				class="text-lg sm:text-xl font-bold text-gray-900 mb-2 transition-all duration-300 group-hover:text-blue-600"
+				class="text-lg sm:text-xl font-bold text-slate-100 mb-2 transition-all duration-300 group-hover:text-blue-400"
 			>
 				{{ props.project.title }}
 			</h3>
 			<p
-				class="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4 leading-relaxed transition-all duration-300 group-hover:text-gray-700"
+				class="text-sm sm:text-base text-slate-400 mb-3 sm:mb-4 leading-relaxed transition-all duration-300 group-hover:text-slate-300"
 			>
 				{{ props.project.description }}
 			</p>
@@ -56,7 +56,7 @@
 				<span
 					v-for="(tech, techIndex) in props.project.technologies"
 					:key="tech"
-					class="px-2 sm:px-3 py-1 rounded-full bg-slate-100 text-slate-700 text-xs font-medium transition-all duration-300 hover:bg-blue-100 hover:text-blue-800 hover:scale-105"
+					class="px-2 sm:px-3 py-1 rounded-full bg-slate-800 text-slate-300 text-xs font-medium transition-all duration-300 hover:bg-blue-950/80 hover:text-blue-300 hover:scale-105 border border-slate-600/50"
 					:style="{ transitionDelay: `${techIndex * 50}ms` }"
 				>
 					{{ tech }}
@@ -66,13 +66,13 @@
 
 		<!-- Links positioned at bottom left -->
 		<div
-			class="absolute bottom-0 left-0 right-0 flex gap-3 sm:gap-4 text-xs sm:text-sm font-medium bg-white/95 backdrop-blur-sm p-3 sm:p-4"
+			class="absolute bottom-0 left-0 right-0 flex gap-3 sm:gap-4 text-xs sm:text-sm font-medium bg-slate-900/95 backdrop-blur-sm p-3 sm:p-4 border-t border-slate-700/80"
 		>
 			<a
 				:href="props.project.github"
 				target="_blank"
 				rel="noopener noreferrer"
-				class="inline-flex items-center gap-1 text-blue-600 hover:text-blue-800 transition-all duration-300 hover:scale-105 hover:-translate-y-0.5 min-h-[44px]"
+				class="inline-flex items-center gap-1 text-blue-400 hover:text-blue-300 transition-all duration-300 hover:scale-105 hover:-translate-y-0.5 min-h-[44px]"
 			>
 				<span>GitHub</span>
 				<span
@@ -85,7 +85,7 @@
 				:href="props.project.live"
 				target="_blank"
 				rel="noopener noreferrer"
-				class="inline-flex items-center gap-1 text-green-600 hover:text-green-700 transition-all duration-300 hover:scale-105 hover:-translate-y-0.5 min-h-[44px]"
+				class="inline-flex items-center gap-1 text-emerald-400 hover:text-emerald-300 transition-all duration-300 hover:scale-105 hover:-translate-y-0.5 min-h-[44px]"
 			>
 				<span>Live Demo</span>
 				<span

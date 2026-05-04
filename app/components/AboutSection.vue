@@ -28,16 +28,16 @@
 		id="about"
 		ref="sectionRef"
 		:class="[
-			'py-16 bg-white section-reveal',
+			'py-16 bg-slate-950 section-reveal',
 			isVisible ? 'is-visible' : 'is-hidden',
 		]"
 	>
 		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 			<div class="text-center mb-12 sm:mb-16">
-				<h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-3 sm:mb-4">
+				<h2 class="text-3xl sm:text-4xl font-bold text-slate-100 mb-3 sm:mb-4">
 					About Me
 				</h2>
-				<p class="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-4">
+				<p class="text-lg sm:text-xl text-slate-400 max-w-3xl mx-auto px-4">
 					I’m a results-driven Full Stack Developer with expertise in Vue,
 					Laravel, and Shopify. I have worked closely with stakeholders through
 					my internships to deliver tailored, industry-compliant solutions that
@@ -49,13 +49,13 @@
 
 			<div class="grid md:grid-cols-2 gap-8 sm:gap-12 items-start">
 				<div>
-					<h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-4 sm:mb-6">
+					<h3 class="text-xl sm:text-2xl font-bold text-slate-100 mb-4 sm:mb-6">
 						My Skills
 					</h3>
 					<div class="space-y-4 sm:space-y-6">
 						<div>
 							<h4
-								class="text-base sm:text-lg font-semibold text-gray-800 mb-2 sm:mb-3"
+								class="text-base sm:text-lg font-semibold text-slate-200 mb-2 sm:mb-3"
 							>
 								Frontend
 							</h4>
@@ -63,7 +63,7 @@
 								<span
 									v-for="skill in skills.frontend"
 									:key="skill"
-									class="bg-blue-100 text-blue-800 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm"
+									class="bg-blue-950/70 text-blue-300 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm border border-blue-500/20"
 								>
 									{{ skill }}
 								</span>
@@ -71,7 +71,7 @@
 						</div>
 						<div>
 							<h4
-								class="text-base sm:text-lg font-semibold text-gray-800 mb-2 sm:mb-3"
+								class="text-base sm:text-lg font-semibold text-slate-200 mb-2 sm:mb-3"
 							>
 								Backend
 							</h4>
@@ -79,7 +79,7 @@
 								<span
 									v-for="skill in skills.backend"
 									:key="skill"
-									class="bg-green-100 text-green-800 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm"
+									class="bg-emerald-950/70 text-emerald-300 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm border border-emerald-500/20"
 								>
 									{{ skill }}
 								</span>
@@ -87,7 +87,7 @@
 						</div>
 						<div>
 							<h4
-								class="text-base sm:text-lg font-semibold text-gray-800 mb-2 sm:mb-3"
+								class="text-base sm:text-lg font-semibold text-slate-200 mb-2 sm:mb-3"
 							>
 								Tools & Technologies
 							</h4>
@@ -95,7 +95,7 @@
 								<span
 									v-for="skill in skills.tools"
 									:key="skill"
-									class="bg-purple-100 text-purple-800 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm"
+									class="bg-purple-950/70 text-purple-300 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm border border-purple-500/20"
 								>
 									{{ skill }}
 								</span>
@@ -104,14 +104,14 @@
 					</div>
 				</div>
 				<div
-					class="bg-gray-50 rounded-2xl p-4 sm:p-6 md:p-8 shadow-sm border border-gray-100"
+					class="bg-slate-900/80 rounded-2xl p-4 sm:p-6 md:p-8 shadow-sm border border-slate-700/80"
 				>
-					<h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">
+					<h3 class="text-xl sm:text-2xl font-bold text-slate-100 mb-3 sm:mb-4">
 						What I Do
 					</h3>
-					<ul class="space-y-3 sm:space-y-4 text-gray-700">
+					<ul class="space-y-3 sm:space-y-4 text-slate-300">
 						<li class="flex items-start">
-							<span class="text-blue-500 mr-2 sm:mr-3 text-sm sm:text-base"
+							<span class="text-blue-400 mr-2 sm:mr-3 text-sm sm:text-base"
 								>•</span
 							>
 							<span class="text-sm sm:text-base"
@@ -119,7 +119,7 @@
 							>
 						</li>
 						<li class="flex items-start">
-							<span class="text-blue-500 mr-2 sm:mr-3 text-sm sm:text-base"
+							<span class="text-blue-400 mr-2 sm:mr-3 text-sm sm:text-base"
 								>•</span
 							>
 							<span class="text-sm sm:text-base"
@@ -127,7 +127,7 @@
 							>
 						</li>
 						<li class="flex items-start">
-							<span class="text-blue-500 mr-2 sm:mr-3 text-sm sm:text-base"
+							<span class="text-blue-400 mr-2 sm:mr-3 text-sm sm:text-base"
 								>•</span
 							>
 							<span class="text-sm sm:text-base"
@@ -135,7 +135,7 @@
 							>
 						</li>
 						<li class="flex items-start">
-							<span class="text-blue-500 mr-2 sm:mr-3 text-sm sm:text-base"
+							<span class="text-blue-400 mr-2 sm:mr-3 text-sm sm:text-base"
 								>•</span
 							>
 							<span class="text-sm sm:text-base"
@@ -143,7 +143,7 @@
 							>
 						</li>
 						<li class="flex items-start">
-							<span class="text-blue-500 mr-2 sm:mr-3 text-sm sm:text-base"
+							<span class="text-blue-400 mr-2 sm:mr-3 text-sm sm:text-base"
 								>•</span
 							>
 							<span class="text-sm sm:text-base"
@@ -151,7 +151,7 @@
 							>
 						</li>
 						<li class="flex items-start">
-							<span class="text-blue-500 mr-2 sm:mr-3 text-sm sm:text-base"
+							<span class="text-blue-400 mr-2 sm:mr-3 text-sm sm:text-base"
 								>•</span
 							>
 							<span class="text-sm sm:text-base"
@@ -159,7 +159,7 @@
 							>
 						</li>
 						<li class="flex items-start">
-							<span class="text-blue-500 mr-2 sm:mr-3 text-sm sm:text-base"
+							<span class="text-blue-400 mr-2 sm:mr-3 text-sm sm:text-base"
 								>•</span
 							>
 							<span class="text-sm sm:text-base"
@@ -173,7 +173,7 @@
 
 			<div class="mt-12 sm:mt-16">
 				<h3
-					class="text-xl sm:text-2xl font-bold text-gray-900 text-center mb-6 sm:mb-8"
+					class="text-xl sm:text-2xl font-bold text-slate-100 text-center mb-6 sm:mb-8"
 				>
 					Guiding Principles
 				</h3>
@@ -181,14 +181,14 @@
 					<div
 						v-for="principle in principles"
 						:key="principle.title"
-						class="glass-card rounded-2xl p-4 sm:p-6 text-left h-full bg-gradient-to-br from-white/90 to-white/65 border border-slate-200/25 backdrop-blur-xl shadow-[0_18px_36px_-24px_rgba(30,64,175,0.5)] transition-all duration-350 hover:-translate-y-1 hover:shadow-[0_22px_48px_-24px_rgba(30,64,175,0.55)]"
+						class="glass-card rounded-2xl p-4 sm:p-6 text-left h-full bg-gradient-to-br from-white/[0.08] to-white/[0.03] border border-white/10 backdrop-blur-xl shadow-[0_18px_36px_-24px_rgba(30,64,175,0.35)] transition-all duration-350 hover:-translate-y-1 hover:shadow-[0_22px_48px_-24px_rgba(30,64,175,0.45)]"
 					>
 						<h4
-							class="text-base sm:text-lg font-semibold text-gray-900 mb-2 sm:mb-3"
+							class="text-base sm:text-lg font-semibold text-slate-100 mb-2 sm:mb-3"
 						>
 							{{ principle.title }}
 						</h4>
-						<p class="text-gray-600 leading-relaxed text-xs sm:text-sm">
+						<p class="text-slate-400 leading-relaxed text-xs sm:text-sm">
 							{{ principle.description }}
 						</p>
 					</div>

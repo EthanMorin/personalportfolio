@@ -24,21 +24,21 @@
 		id="projects"
 		ref="sectionRef"
 		:class="[
-			'py-16 bg-gray-50 section-reveal',
+			'py-16 bg-slate-900 section-reveal',
 			isVisible ? 'is-visible' : 'is-hidden',
 		]"
 	>
 		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 			<div class="text-center mb-12 sm:mb-16">
 				<span
-					class="inline-flex items-center px-3 sm:px-4 py-1 rounded-full bg-blue-100 text-blue-700 text-xs sm:text-sm font-medium mb-3 sm:mb-4"
+					class="inline-flex items-center px-3 sm:px-4 py-1 rounded-full bg-blue-950/70 text-blue-300 border border-blue-500/20 text-xs sm:text-sm font-medium mb-3 sm:mb-4"
 				>
 					Selected Work
 				</span>
-				<h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-3 sm:mb-4">
+				<h2 class="text-3xl sm:text-4xl font-bold text-slate-100 mb-3 sm:mb-4">
 					Featured Projects
 				</h2>
-				<p class="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-4">
+				<p class="text-lg sm:text-xl text-slate-400 max-w-3xl mx-auto px-4">
 					Here are some of my recent projects that showcase my skills and
 					experience. Each one balances product vision with technical
 					excellence.
@@ -48,20 +48,21 @@
 			<div :class="getGridClasses()">
 				<ProjectCard
 					v-for="(project, index) in projects"
+					:image="project.image"
+					:index="index"
 					:key="project.title"
 					:project="project"
-					:index="index"
 				/>
 			</div>
 
 			<div class="mt-12 sm:mt-16 max-w-4xl mx-auto">
 				<div
-					class="glass-card rounded-3xl p-6 sm:p-8 md:p-10 text-center bg-gradient-to-br from-white/90 to-white/65 border border-slate-200/25 backdrop-blur-xl shadow-[0_18px_36px_-24px_rgba(30,64,175,0.5)] transition-all duration-350 hover:-translate-y-1 hover:shadow-[0_22px_48px_-24px_rgba(30,64,175,0.55)]"
+					class="glass-card rounded-3xl p-6 sm:p-8 md:p-10 text-center bg-gradient-to-br from-white/[0.08] to-white/[0.03] border border-white/10 backdrop-blur-xl shadow-[0_18px_36px_-24px_rgba(30,64,175,0.35)] transition-all duration-350 hover:-translate-y-1 hover:shadow-[0_22px_48px_-24px_rgba(30,64,175,0.45)]"
 				>
-					<h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-3">
+					<h3 class="text-xl sm:text-2xl font-bold text-slate-100 mb-3">
 						Need something built differently?
 					</h3>
-					<p class="text-sm sm:text-base text-gray-600 mb-4 sm:mb-6">
+					<p class="text-sm sm:text-base text-slate-400 mb-4 sm:mb-6">
 						I love collaborating on ambitious ideas—whether it's breathing life
 						into an MVP, scaling an existing product, or crafting a polished
 						design system.

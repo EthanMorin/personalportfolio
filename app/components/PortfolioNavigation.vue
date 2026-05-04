@@ -47,10 +47,10 @@
 </script>
 
 <template>
-	<nav class="fixed top-0 w-full bg-white/70 backdrop-blur-sm shadow-sm z-40">
+	<nav class="fixed top-0 w-full bg-slate-950/80 backdrop-blur-md shadow-sm border-b border-white/5 z-40">
 		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 			<div class="relative flex justify-between items-center h-16">
-				<div class="text-lg sm:text-xl md:text-2xl font-bold text-gray-900">
+				<div class="text-lg sm:text-xl md:text-2xl font-bold text-slate-100">
 					Ethan Morin's Portfolio
 				</div>
 
@@ -63,8 +63,8 @@
 						:class="[
 							'relative text-sm font-medium transition-colors',
 							currentSection === section
-								? 'text-gray-900'
-								: 'text-gray-600 hover:text-gray-900',
+								? 'text-slate-100'
+								: 'text-slate-400 hover:text-slate-100',
 						]"
 						:aria-current="currentSection === section ? 'page' : undefined"
 						@click="scrollToSection(section)"
@@ -80,7 +80,7 @@
 				<!-- Mobile Menu Button -->
 				<button
 					type="button"
-					class="md:hidden p-2 rounded-lg text-gray-600 hover:text-gray-900 hover:bg-gray-100 transition-colors"
+					class="md:hidden p-2 rounded-lg text-slate-400 hover:text-slate-100 hover:bg-white/10 transition-colors"
 					:aria-expanded="isMobileMenuOpen"
 					aria-label="Toggle mobile menu"
 					@click="toggleMobileMenu"
@@ -112,7 +112,7 @@
 
 			<!-- Mobile Menu -->
 			<div
-				class="md:hidden absolute top-full left-0 right-0 bg-white/95 backdrop-blur-md shadow-lg border-t border-gray-200/60"
+				class="md:hidden absolute top-full left-0 right-0 bg-slate-950/95 backdrop-blur-md shadow-lg border-t border-white/10"
 				:class="[
 					isMobileMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible',
 				]"
@@ -125,8 +125,8 @@
 						:class="[
 							'w-full text-left px-4 py-3 rounded-lg text-base font-medium transition-colors',
 							currentSection === section
-								? 'text-blue-600 bg-blue-50'
-								: 'text-gray-700 hover:text-gray-900 hover:bg-gray-50',
+								? 'text-blue-300 bg-blue-950/60'
+								: 'text-slate-300 hover:text-slate-100 hover:bg-white/10',
 						]"
 						:aria-current="currentSection === section ? 'page' : undefined"
 						@click="handleSectionClick(section)"
@@ -136,7 +136,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="h-0.5 w-full bg-gray-200/60">
+		<div class="h-0.5 w-full bg-slate-800/80">
 			<div
 				class="h-full bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 transition-all duration-300"
 				:style="{ width: `${scrollProgress}%` }"

@@ -53,7 +53,7 @@ export const usePortfolioData = () => {
         "A responsive demo store built with React, TypeScript, and Tailwind CSS. It features smooth product browsing, an interactive cart with real-time updates, and a mock checkout flow that highlights secure form handling and fast performance across devices—all in a production-style design with no real purchases.",
       technologies: ["React", "Tailwind CSS", "TypeScript"],
       image:
-        "",
+        "/images/shopease_demo.png",
       github: "https://github.com/EthanMorin/shopease",
       live: "https://shopease.ethanmorin.dev/",
     },
@@ -63,7 +63,7 @@ export const usePortfolioData = () => {
         "Modern kanban board with React 18, TypeScript, and Zustand state management. Features drag-and-drop card management, inline editing, multiple color themes, and glassmorphism UI design. Built with Vite for fast development and includes dark/light mode support with accessible components.",
       technologies: ["React", "TypeScript", "Tailwind CSS", "Zustand"],
       image:
-        "",
+        "/images/atlas_todo_demo.png",
       github: "https://github.com/EthanMorin/Atlas-Todo",
       live: "https://atlas-todo.ethanmorin.dev/",
     },

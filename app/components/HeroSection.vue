@@ -1,6 +1,5 @@
 <script setup lang="ts">
 	const { scrollToSection } = useNavigation();
-	const profileImage = '/images/profile.jpeg';
 
 	const heroBadges = [
 		'Full Stack Developer',
@@ -26,8 +25,8 @@
 		ref="sectionRef"
 		:class="[
 			'relative overflow-hidden min-h-screen section-reveal flex flex-col',
-			'bg-gradient-to-br from-blue-50 via-purple-50 to-white',
-			'bg-[radial-gradient(circle_at_20%_20%,rgba(59,130,246,0.25),transparent_60%),radial-gradient(circle_at_80%_0%,rgba(124,58,237,0.25),transparent_55%)]',
+			'bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950',
+			'bg-[radial-gradient(circle_at_20%_20%,rgba(59,130,246,0.22),transparent_60%),radial-gradient(circle_at_80%_0%,rgba(124,58,237,0.2),transparent_55%)]',
 			isVisible ? 'is-visible' : 'is-hidden',
 		]"
 	>
@@ -82,31 +81,25 @@
 					<span
 						v-for="badge in heroBadges"
 						:key="badge"
-						class="px-3 py-1 sm:px-4 rounded-full bg-white/70 border border-white/40 text-xs sm:text-sm font-medium text-gray-700 shadow-sm backdrop-blur text-center w-full h-8 sm:w-auto sm:h-auto flex items-center justify-center"
+						class="px-3 py-1 sm:px-4 rounded-full bg-white/10 border border-white/15 text-xs sm:text-sm font-medium text-slate-200 shadow-sm backdrop-blur text-center w-full h-8 sm:w-auto sm:h-auto flex items-center justify-center"
 					>
 						{{ badge }}
 					</span>
 				</div>
 
 				<div class="mb-10">
-					<img
-						:src="profileImage"
-						alt="Ethan Morin"
-						class="w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 mx-auto my-4 sm:my-6 rounded-full object-cover shadow-xl ring-4 ring-white/70"
-						loading="lazy"
-					/>
 					<h1
-						class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 mb-3 sm:mb-4 tracking-tight px-4"
+						class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-slate-100 mb-3 sm:mb-4 tracking-tight px-4"
 					>
 						Hi, I'm <span class="animate-gradient-text">Ethan Morin</span>
 					</h1>
 					<h2
-						class="text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-600 mb-4 sm:mb-6 px-4"
+						class="text-lg sm:text-xl md:text-2xl lg:text-3xl text-slate-400 mb-4 sm:mb-6 px-4"
 					>
 						Software Engineer crafting delightful end-to-end experiences
 					</h2>
 					<p
-						class="text-base sm:text-lg text-gray-700 max-w-3xl mx-auto mb-6 sm:mb-8 px-4 leading-relaxed"
+						class="text-base sm:text-lg text-slate-300 max-w-3xl mx-auto mb-6 sm:mb-8 px-4 leading-relaxed"
 					>
 						Experienced in building and designing software solutions from the
 						ground up, I use a variety of technologies to meet the unique needs
@@ -126,7 +119,7 @@
 						</button>
 						<button
 							type="button"
-							class="border border-blue-600 text-blue-600 px-6 sm:px-8 py-3 sm:py-3 rounded-lg hover:bg-blue-50 transition-all duration-300 btn-glow relative overflow-hidden hover:-translate-y-0.5 hover:scale-[1.01] hover:shadow-[0_20px_40px_-25px_rgba(59,130,246,0.8)] text-sm sm:text-base font-medium min-h-[44px] flex items-center justify-center"
+							class="border border-blue-400 text-blue-300 px-6 sm:px-8 py-3 sm:py-3 rounded-lg hover:bg-blue-950/50 transition-all duration-300 btn-glow relative overflow-hidden hover:-translate-y-0.5 hover:scale-[1.01] hover:shadow-[0_20px_40px_-25px_rgba(59,130,246,0.5)] text-sm sm:text-base font-medium min-h-[44px] flex items-center justify-center"
 							@click="scrollToSection('contact')"
 						>
 							Get In Touch
@@ -140,12 +133,12 @@
 					<div
 						v-for="highlight in heroHighlights"
 						:key="highlight.label"
-						class="glass-card rounded-2xl px-6 py-5 text-left bg-gradient-to-br from-white/90 to-white/65 border border-slate-200/25 backdrop-blur-xl shadow-[0_18px_36px_-24px_rgba(30,64,175,0.5)] transition-all duration-350 hover:-translate-y-1 hover:shadow-[0_22px_48px_-24px_rgba(30,64,175,0.55)] w-full sm:w-64 flex-shrink-0"
+						class="glass-card rounded-2xl px-6 py-5 text-left bg-gradient-to-br from-white/[0.08] to-white/[0.03] border border-white/10 backdrop-blur-xl shadow-[0_18px_36px_-24px_rgba(30,64,175,0.35)] transition-all duration-350 hover:-translate-y-1 hover:shadow-[0_22px_48px_-24px_rgba(30,64,175,0.45)] w-full sm:w-64 flex-shrink-0"
 					>
-						<p class="text-3xl font-extrabold text-gray-900 mb-1">
+						<p class="text-3xl font-extrabold text-slate-100 mb-1">
 							{{ highlight.value }}
 						</p>
-						<p class="text-sm uppercase tracking-wide text-gray-500">
+						<p class="text-sm uppercase tracking-wide text-slate-500">
 							{{ highlight.label }}
 						</p>
 					</div>
@@ -154,7 +147,7 @@
 		</div>
 
 		<!-- Scroll indicator at bottom using Tailwind -->
-		<div class="hidden md:flex justify-center text-gray-500 py-6">
+		<div class="hidden md:flex justify-center text-slate-500 py-6">
 			<div
 				class="flex flex-col items-center text-xs font-semibold tracking-widest"
 			>
