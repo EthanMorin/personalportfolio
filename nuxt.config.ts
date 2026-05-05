@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     public: {
       supabaseUrl: process.env.SUPABASE_URL,
       supabaseKey: process.env.SUPABASE_KEY,
+      siteUrl: 'https://ethanmorin.dev',
     },
   },
   compatibilityDate: '2025-07-15',
