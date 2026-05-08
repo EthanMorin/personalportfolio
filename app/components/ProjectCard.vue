@@ -37,9 +37,13 @@
 		<div class="relative overflow-hidden">
 			<img
 				:src="props.project.image"
-				:alt="props.project.title"
+				:alt="`${props.project.title} project screenshot by Ethan Morin`"
+				width="3840"
+				height="2184"
+				loading="lazy"
+				decoding="async"
 				class="w-full h-40 sm:h-48 object-cover"
-			/>
+			>
 		</div>
 		<div class="relative p-4 sm:p-6 pb-16 sm:pb-20">
 			<h3
