@@ -4,8 +4,6 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineNuxtConfig({
   runtimeConfig: {
     public: {
-      supabaseUrl: process.env.SUPABASE_URL,
-      supabaseKey: process.env.SUPABASE_KEY,
       siteUrl: 'https://ethanmorin.dev',
     },
   },
@@ -21,10 +19,14 @@ export default defineNuxtConfig({
       tailwindcss(),
     ],
   },
+  supabase: {
+    redirect: false,
+  },
   modules: [
     '@nuxt/content',
     '@nuxt/ui',
     '@nuxt/eslint',
-    '@nuxt/image'
+    '@nuxt/image',
+    '@nuxtjs/supabase'
   ]
 })

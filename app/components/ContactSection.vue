@@ -1,4 +1,5 @@
 <script setup lang="ts">
+	
 	const { element: sectionRef, isVisible } = useRevealObserver({
 		threshold: 0.2,
 	});
