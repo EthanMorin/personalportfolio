@@ -86,12 +86,24 @@
 						{{ badge }}
 					</span>
 				</div>
-
+				<div class="relative mb-8">
+					<div class="absolute inset-0 bg-gradient-to-r from-blue-500/20 via-purple-500/20 to-pink-500/20 rounded-full blur-2xl animate-pulse-timeline"></div>
+					<div class="relative w-40 h-40 md:w-52 md:h-52 mx-auto">
+						<div class="absolute inset-0 rounded-full bg-gradient-to-br from-blue-500/30 via-purple-500/30 to-pink-500/30 animate-gradient-spin"></div>
+						<div class="absolute inset-[3px] rounded-full overflow-hidden bg-slate-900/50 backdrop-blur-sm flex items-center justify-center">
+							<NuxtImg 
+								src="/images/MT-logo-notext.svg" 
+								class="object-contain opacity-90 hover:opacity-100 transition-opacity duration-300"
+								alt="MT Logo"
+							/>
+						</div>
+					</div>
+				</div>
 				<div class="mb-10">
 					<h1
 						class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-slate-100 mb-3 sm:mb-4 tracking-tight px-4"
 					>
-						Hi, I'm <span class="animate-gradient-text">Ethan Morin</span>
+						<span class="animate-gradient-text">Ethan Morin</span>
 					</h1>
 					<h2
 						class="text-lg sm:text-xl md:text-2xl lg:text-3xl text-slate-400 mb-4 sm:mb-6 px-4"
