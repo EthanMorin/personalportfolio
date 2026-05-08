@@ -1,4 +1,9 @@
 <script setup lang="ts">
+useSeoMeta({
+  title: 'Admin',
+  robots: 'noindex, nofollow'
+})
+
 const supabase = useSupabaseClient()
 const user = useSupabaseUser()
 

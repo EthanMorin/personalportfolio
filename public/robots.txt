@@ -1,2 +1,5 @@
 User-Agent: *
-Disallow:
+Disallow: /admin
+Disallow: /login
+
+Sitemap: https://ethanmorin.dev/sitemap.xml
